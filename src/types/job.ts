@@ -4,6 +4,8 @@ export type JobLevel = "intern" | "junior" | "mid" | "senior";
 
 export interface JobOfferInput {
   rawText: string;
+  detectedStack: string[];
+  level: JobLevel;
 }
 
 export interface JobSkill {
