@@ -1,3 +1,6 @@
+import { apiKey, assistantId } from "../config/vapi.config";
+import VapiWidget from "./Vapi";
+
 interface Props {
   onEnd: () => void;
 }
@@ -6,16 +9,12 @@ export default function VoiceInterview({ onEnd }: Props) {
   return (
     <div className="border rounded-md p-6">
       <p className="mb-4">
-        🎙️ L'entretien est en cours... Réponds à voix haute.
+        🎙️ L'entretien va bientot démarrer... Réponds à voix haute.
       </p>
 
       {/* Plus tard : intégration Vapi ici */}
-      <button
-        onClick={onEnd}
-        className="mt-6 bg-red-500 text-white px-4 py-2 rounded"
-      >
-        Terminer l’entretien
-      </button>
+      {/* complete here by adding vapi component and providing inputs */}
+      <VapiWidget apiKey={apiKey} assistantId={assistantId} onEnd={onEnd} />
     </div>
   );
 }
