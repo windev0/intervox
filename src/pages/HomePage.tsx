@@ -22,10 +22,10 @@ const HomePage = () => {
 
           <div className="mt-6 flex justify-center gap-4">
             <a
-              href="/analyse"
+              href="/offer-input"
               className="px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
             >
-              Analyser une offre
+              Démarrer
             </a>
             <a
               href="/about"
@@ -47,7 +47,7 @@ const HomePage = () => {
             <p className="text-xs text-gray-400 text-center mt-3">
               Illustration par{" "}
               <a
-                href="https://www.freepik.com/free-vector/online-interview-concept-illustration_13867624.htm"
+                href="#"
                 className="underline"
               >
                 Freepik
