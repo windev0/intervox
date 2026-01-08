@@ -16,6 +16,6 @@ vapiInstance.on(
 vapiInstance.on("error", (error: string) => console.error("Error:", error));
 
 export default vapiInstance;
-const apiKey = import.meta.env.VITE_VITE_VAPI_PUBLIC_KEY || "";
+const apiKey = import.meta.env.VITE_VAPI_PUBLIC_KEY || "";
 const assistantId = import.meta.env.VITE_VAPI_ASSISTANT_ID || "";
 export { apiKey, assistantId };

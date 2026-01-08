@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import vapiInstance from "../config/vapi.config";
+import type { JobOfferInput } from "../types/job";
 
 interface VapiWidgetProps {
+  jobOffer: JobOfferInput;
+  onTranscriptUpdate?: (transcript: Array<{ role: string; text: string }>) => void;
   apiKey: string;
   assistantId: string;
   config?: Record<string, unknown>;
